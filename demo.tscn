@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://x2id0a7mcexw"]
+[gd_scene load_steps=6 format=3 uid="uid://w17rg046g0pi"]
 
-[ext_resource type="Material" uid="uid://ct86ajeskjq18" path="res://Volumetric-Raymarched-Clouds-Shader-Material.tres" id="1_fl4hi"]
+[ext_resource type="Material" uid="uid://cbfryu0wad0rp" path="res://Volumetric-Raymarched-Clouds-Shader-Material.tres" id="1_fl4hi"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_xfpij"]
 lightmap_size_hint = Vector2i(14, 21)
