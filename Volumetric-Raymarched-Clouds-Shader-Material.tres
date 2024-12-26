@@ -1,8 +1,8 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cbfryu0wad0rp"]
 
 [ext_resource type="Shader" path="res://Volumetric-Raymarched-Clouds-Shader.gdshader" id="1_fk1yv"]
-[ext_resource type="NoiseTexture3D" uid="uid://rm1wbusp7bhw" path="res://CloudNoiseTexture.tres" id="2_0qhue"]
-[ext_resource type="NoiseTexture3D" uid="uid://dcqsbd1shw3e7" path="res://DetailNoiseTexture.tres" id="3_vytxt"]
+[ext_resource type="NoiseTexture3D" path="res://CloudNoiseTexture.tres" id="2_0qhue"]
+[ext_resource type="NoiseTexture3D" path="res://DetailNoiseTexture.tres" id="3_vytxt"]
 
 [resource]
 render_priority = 0
@@ -14,7 +14,7 @@ shader_parameter/cloud_threshold_multiplier = 4.291
 shader_parameter/GPUKiller = 225
 shader_parameter/GPUSaver = 0.41
 shader_parameter/cloud_scroll_speed = 0.0
-shader_parameter/minBounds = Vector3(-4131.94, 256, -4096)
+shader_parameter/minBounds = Vector3(-4096, 256, -4096)
 shader_parameter/maxBounds = Vector3(4096, 576, 4096)
 shader_parameter/DetailNoiseInfluenceOnFinalResult = 51.373
 shader_parameter/detail_scroll_speed = -10.0
