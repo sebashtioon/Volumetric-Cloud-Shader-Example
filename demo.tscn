@@ -1,17 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://x2id0a7mcexw"]
+[gd_scene load_steps=6 format=3 uid="uid://x2id0a7mcexw"]
 
-[ext_resource type="Material" uid="uid://ct86ajeskjq18" path="res://Volumeetric-Raymarched-Clouds-Shader-Material.tres" id="1_fl4hi"]
+[ext_resource type="Material" uid="uid://ct86ajeskjq18" path="res://Volumetric-Raymarched-Clouds-Shader-Material.tres" id="1_fl4hi"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_xfpij"]
 lightmap_size_hint = Vector2i(14, 21)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_xl5r1"]
-size = Vector2(320, 320)
-
-[sub_resource type="TorusMesh" id="TorusMesh_uphpc"]
-inner_radius = 0.36
-rings = 16
-ring_segments = 16
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fopq5"]
 sky_top_color = Color(0.784314, 0.894118, 0.956863, 1)
@@ -35,15 +27,10 @@ transform = Transform3D(8192, 0, 0, 0, 128, 0, 0, 0, 8192, 0, 128, 0)
 material_override = ExtResource("1_fl4hi")
 mesh = SubResource("BoxMesh_xfpij")
 
-[node name="Plane-320m" type="MeshInstance3D" parent="."]
-mesh = SubResource("PlaneMesh_xl5r1")
-
-[node name="LargeObject" type="MeshInstance3D" parent="."]
-transform = Transform3D(59.3075, -24.0546, 1.33785e-06, 24.0082, 59.1931, 3.97289, -1.49322, -3.6816, 63.8766, 0, -5.90557, 0)
-mesh = SubResource("TorusMesh_uphpc")
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_u5ryx")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.992521, 0.105701, -0.0610723, -0.121817, -0.82494, 0.551937, 0.00795954, 0.555248, 0.831646, 0, 40.2541, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
